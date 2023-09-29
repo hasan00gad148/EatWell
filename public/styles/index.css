@@ -1,0 +1,77 @@
+/* :root{
+    --main-clr:hsl(40, 90%, 70%, 0.9) ;
+    --second-clr: hsl(40, 90%, 80%, 0.8); ;
+    --font-clr:hsl(0, 0%, 20%);
+    --hover-clr:hsl(40, 80%, 60%,0.5);
+
+} */
+
+main {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 16rem auto;
+    }
+    
+    
+    
+.history {
+    width: 75%;
+    
+    padding: 2.5rem;
+    color: var(--font-clr);
+    background-color: var(--main-clr);
+    border-radius: 5rem;
+    font-size: 1.20rem;
+    font-weight: 600 ;
+    margin-inline: 2rem;
+}
+
+.history ul h2{
+font-weight: 600;
+font-size: 1.5rem;
+}
+.history  ul p {
+text-indent: 3ch;
+font-size: 1.2rem;
+padding: 0.5rem;
+}
+
+.browseoradd {
+    width: 70%;
+    padding: 1rem;
+    background-color:  transparent ;
+
+}
+
+.browseoradd ul {
+    display: flex;
+    justify-content: center;
+    gap:1.5rem;
+
+
+}
+
+.browseoradd li {
+    /* padding: 1rem; */
+    background-color: var(--main-clr); 
+    border-radius: 1rem;
+    text-align: center;
+}
+.browseoradd a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600 ;
+    color:hsl(0, 0%, 10%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+.browseoradd a:hover{
+
+    background-color: var(--hover-clr);
+
+}

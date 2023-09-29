@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>browes restaurant</title>
+
+  <%-include("includes/headLink") %>
+<link rel="stylesheet" href="/public/styles/upload_sor.css">
+
+
+
+</head>
+
+<body>
+  <header>
+    <%-include("includes/nav") %>
+  </header>
+
+  <main>
+    <% if (success) { %>
+
+      <p>Your restaurant has been uploaded  <span class="successded" >successfully</span></p>
+    
+    <% }  else{ %>
+
+      <p> <span class="failed" >upload failed</span>,somethin went wrong try again</p>
+    
+    <% }   %>
+    
+  </main>
+</body>
+
+</html>

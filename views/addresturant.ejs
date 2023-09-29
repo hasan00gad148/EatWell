@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add restaurant</title>
+    <%-include("includes/headLink") %>
+
+    <link rel="stylesheet" href="/public/styles/addresturant.css" />
+  </head>
+
+  <body>
+    <header>
+      <%-include("includes/nav") %>
+    </header>
+
+    <main>
+      <section>
+        <form action="/add" method="post" enctype="multipart/form-data">
+          <div><label for="name">name</label><input required id="name" name="name"  type="text" /></div>
+          <div><label for="address">address</label><input required id="address" name="address" type="text" /></div>
+          <div><label for="website">website</label><input required id="website" name="website" type="text" /></div>
+          <div><label for="phone">phone</label> <input required id="phone" name="phone" type="number" /></div>
+
+
+          <div><label for="image">image</label><input required id="image" name="image" type="file" accept="image/*"/></div>
+          <input type="submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
