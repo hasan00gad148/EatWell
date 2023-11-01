@@ -41,7 +41,7 @@ app.post('/', upload.single('image'), (req, res) => {
 try {
   resturant = req.body
   resturant.id = uuidv4().toString()
-  resturant.img = "public/uploads/"+req.file.filename
+  resturant.img = "/public/uploads/"+req.file.filename
   
 
 
