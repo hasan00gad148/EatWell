@@ -37,7 +37,7 @@ const upload = multer({
 // Create a route handler for the file upload endpoint
 app.post('/', upload.single('image'), (req, res) => {
   // Access the uploaded file and other fields from the request object
-  success = false;
+  isUploaded = false;
 try {
   resturant = req.body
   resturant.id = uuidv4().toString()
@@ -53,14 +53,14 @@ try {
   console.log(req.file);
 
   write("./database/resturants.json",resturants)
-  success = true;
+  isUploaded = true;
 
 } catch (error) {
-  res.render("upload_SeccessOrFail",{success:success});
+  res.render("upload_SeccessOrFail",{success:isUploaded});
 }
 
   // Send a response to the client
-  res.render("upload_SeccessOrFail",{success:success});
+  res.render("upload_SeccessOrFail",{success:isUploaded});
 });
 
 

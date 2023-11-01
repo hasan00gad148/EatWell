@@ -31,7 +31,7 @@ main{
     margin-bottom: 3rem;
 }
 
-.restaurants-number p{
+.restaurants-number p, .restaurants-number form label{
     font-size: 1.5rem;
     color: hsl(40, 100%, 70%);
     text-align: center;
@@ -43,6 +43,16 @@ main{
     color: hsl(120, 75%, 60%);
     text-align: center;
 
+}
+.restaurants-number form{
+    overflow-y: hidden;
+}
+.restaurants-number form input[type="submit"]{
+    font-size: 1rem;
+    background-color: hsl(40, 100%, 70%);
+    text-align: center;
+    padding: 0.75rem ;
+    border-radius: 0.3rem;
 }
 
 .restaurants-info{

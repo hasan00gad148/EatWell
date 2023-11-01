@@ -39,7 +39,10 @@ app.get('/add-resturant', (req, res) => {
 
 app.get('/browes-resturant', (req, res) => { 
   resturants = read('./database/resturants.json');
-
+  if (req.query.order==="yes")
+    resturants.sort((a, b) => a.name.localeCompare(b.name))
+  else
+  resturants.sort((a, b) => b.name.localeCompare(a.name))
 
 
   res.render('browesresturant',{resturants:resturants});
